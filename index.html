@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>magExpress</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>magExpress</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-       <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-W26JLKQ');</script>
 <!-- End Google Tag Manager -->
 
-        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+<link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <!--[if lt IE 9]>
         <script src="assets/js/html5shiv.min.js"></script>
         <script src="assets/js/respond.min.js"></script>
@@ -29,10 +29,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDFMZMC"
-                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
+          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          <!-- End Google Tag Manager (noscript) -->
 
-        <div id="preloader">
+          <div id="preloader">
             <div id="status">&nbsp;</div>
         </div>
         <a class="scrollToTop" href="#" id="btn_scroll_to_top" onclick="ClicBoton()"><i class="fa fa-angle-up"></i></a>
@@ -50,7 +50,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </ul>
                             </div>
                             <div class="header_top_right">
-                                
+
                                 <form action="#" class="search_form" id="formBuscar">
                                     <input type="button" value="Iniciar Sesión" class="btn btn-primary">
                                     <input type="text" placeholder="Text to Search" id="textoInput">
@@ -539,56 +539,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <script>
 
-                function ClicBoton(){
-                    dataLayer.push(
-                        {
-                        'event':'virtualEvent',
-                        'category':'Home',
-                        'action':'Clic boton',
-                        'label':'Scroll to top'
-                        }
-                    );
-                    }
-                
-
-
-                 function eventtoMenu(element){
-
-                    var nombre= element.innerHTML;
-
-                    dataLayer.push(
-                        {
-                        'event':'virtualEvent',
-                        'category':'Inicio',
-                        'action':'menuNavegacion - clic',
-                        'label':nombre
-                        }
-                    );
-                    }
-                
-                function eventBuscar() {
-
-                    var textoBuscar = document.getElementById('textoInput').value;
-
-                    dataLayer.push ( {
-                     'event' : 'capacitacionesEvent',
-                     'category' : 'Capacitaciones - Home',
-                     'action' : 'Buscar en la web',
-                     'label' : 'Keywords:' + textoBuscar
-                    }
-
-                    );
+            function ClicBoton(){
+                dataLayer.push(
+                {
+                    'event':'virtualEvent',
+                    'category':'Home',
+                    'action':'Clic boton',
+                    'label':'Scroll to top'
                 }
-                
+                );
+            }
+
+
+
+            function eventtoMenu(element){
+
+                var nombre= element.innerHTML;
+
+                dataLayer.push(
+                {
+                    'event':'virtualEvent',
+                    'category':'Inicio',
+                    'action':'menuNavegacion - clic',
+                    'label':nombre
+                }
+                );
+            }
+
+            function eventBuscar() {
+
+                var textoBuscar = document.getElementById('textoInput').value;
+
+                dataLayer.push ( {
+                   'event' : 'capacitacionesEvent',
+                   'category' : 'Capacitaciones - Home',
+                   'action' : 'Buscar en la web',
+                   'label' : 'Keywords:' + textoBuscar
+               });
+            }
 
 
 
 
-               
+
+
         </script>
 
-        <script>
-        </script>
-        }
+
     </body>
-</html>
+    </html>
