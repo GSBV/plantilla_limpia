@@ -54,7 +54,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <form action="#" class="search_form" id="formBuscar">
                                     <input type="button" value="Iniciar Sesión" class="btn btn-primary">
                                     <input type="text" placeholder="Text to Search" id="textoInput">
-                                    <input type="submit" value="">
+                                    <input type="submit" value="" onclick="eventBuscar();">
                                 </form>
                             </div>
                         </div>
@@ -565,6 +565,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         }
                     );
                     }
+                
+                function eventBuscar() {
+
+                    dataLayer.push ( {
+                     'event' : 'capacitacionesEvent',
+                     'category' : 'Capacitaciones - Home',
+                     'action' : 'Buscar en la web',
+                     'label' : 'Keywords:' + textoBuscar
+                    }
+
+                    );
+                }
                 
 
 
